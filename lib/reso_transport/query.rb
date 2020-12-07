@@ -73,7 +73,7 @@ module ResoTransport
         resp[:results]
       else
         puts resp[:meta]
-        raise "Request Failed"
+        raise "Request Failed: #{resp[:meta]}"
       end
     end
 
